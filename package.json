@@ -1,24 +1,14 @@
 {
-  "version": 2,
   "name": "eleicoes-df-2026",
-  "builds": [
-    {
-      "src": "public/**/*",
-      "use": "@vercel/static"
-    },
-    {
-      "src": "api/**/*.py",
-      "use": "@vercel/python"
-    }
-  ],
-  "routes": [
-    {
-      "src": "/api/(.*)",
-      "dest": "/api/$1"
-    },
-    {
-      "src": "/(.*)",
-      "dest": "/public/$1"
-    }
-  ]
+  "version": "1.0.0",
+  "description": "Sistema de Monitoramento Político DF 2026",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vercel dev",
+    "build": "echo 'Build completed'",
+    "start": "vercel dev"
+  },
+  "keywords": ["política", "monitoramento", "eleições", "DF"],
+  "author": "Sistema de Monitoramento Político",
+  "license": "MIT"
 }
