@@ -1,0 +1,562 @@
+/* Estilos específicos para páginas de candidatos */
+
+/* Header do Candidato */
+.candidate-header-section {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 2rem 0;
+    margin-bottom: 2rem;
+}
+
+.candidate-profile {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.candidate-avatar-large {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background: rgba(255,255,255,0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3rem;
+    font-weight: bold;
+    color: white;
+    border: 4px solid rgba(255,255,255,0.3);
+}
+
+.candidate-details h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+    font-weight: 700;
+}
+
+.current-role {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    opacity: 0.9;
+}
+
+.target-role {
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+    color: #ffd700;
+}
+
+.quick-metrics {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.metric-item {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 1rem;
+    background: rgba(255,255,255,0.1);
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+}
+
+.metric-item i {
+    font-size: 1.1rem;
+}
+
+/* Seções de Conteúdo */
+.content-section {
+    background: white;
+    border-radius: 12px;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.content-section h2 {
+    color: #2c3e50;
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.content-section h2 i {
+    color: #667eea;
+}
+
+/* Resumo Semanal */
+.summary-content p {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    color: #2c3e50;
+    margin-bottom: 2rem;
+}
+
+.weekly-highlights, .sentiment-analysis {
+    background: #f8f9fa;
+    padding: 1.5rem;
+    border-radius: 8px;
+    margin-bottom: 1.5rem;
+}
+
+.weekly-highlights h3, .sentiment-analysis h3 {
+    color: #2c3e50;
+    margin-bottom: 1rem;
+    font-size: 1.3rem;
+}
+
+.weekly-highlights ul {
+    list-style: none;
+    padding: 0;
+}
+
+.weekly-highlights li {
+    padding: 0.5rem 0;
+    border-bottom: 1px solid #e9ecef;
+}
+
+.weekly-highlights li:last-child {
+    border-bottom: none;
+}
+
+/* Gráficos */
+.chart-container {
+    position: relative;
+    height: 300px;
+    margin-bottom: 1.5rem;
+}
+
+.chart-legend {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.legend-item {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.9rem;
+}
+
+.legend-color {
+    width: 16px;
+    height: 16px;
+    border-radius: 3px;
+}
+
+/* Análise de Retórica */
+.rhetoric-analysis {
+    margin-top: 1.5rem;
+}
+
+.rhetoric-analysis h3 {
+    color: #2c3e50;
+    margin-bottom: 1rem;
+}
+
+.rhetoric-analysis p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #555;
+    margin-bottom: 1.5rem;
+}
+
+.key-phrases h4 {
+    color: #2c3e50;
+    margin-bottom: 1rem;
+}
+
+.key-phrases blockquote {
+    background: #f8f9fa;
+    border-left: 4px solid #667eea;
+    padding: 1rem 1.5rem;
+    margin: 1rem 0;
+    font-style: italic;
+    color: #2c3e50;
+}
+
+/* Risco de Imagem */
+.risk-dashboard {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.risk-level {
+    text-align: center;
+    padding: 2rem;
+    border-radius: 12px;
+    color: white;
+}
+
+.risk-baixo {
+    background: linear-gradient(135deg, #28a745, #20c997);
+}
+
+.risk-medio {
+    background: linear-gradient(135deg, #ffc107, #fd7e14);
+}
+
+.risk-alto {
+    background: linear-gradient(135deg, #dc3545, #e83e8c);
+}
+
+.risk-level h3 {
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+}
+
+.risk-score {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.risk-factors h4 {
+    color: #2c3e50;
+    margin-bottom: 1rem;
+}
+
+.risk-factors ul {
+    list-style: none;
+    padding: 0;
+}
+
+.risk-factors li {
+    padding: 0.5rem 0;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.risk-factors li::before {
+    content: "●";
+    font-size: 1.2rem;
+}
+
+.risk-low::before {
+    color: #28a745;
+}
+
+.risk-medium::before {
+    color: #ffc107;
+}
+
+.risk-high::before {
+    color: #dc3545;
+}
+
+/* Tabela de Pesquisas */
+.table-container {
+    overflow-x: auto;
+}
+
+.pesquisas-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+}
+
+.pesquisas-table th,
+.pesquisas-table td {
+    padding: 1rem;
+    text-align: left;
+    border-bottom: 1px solid #e9ecef;
+}
+
+.pesquisas-table th {
+    background-color: #f8f9fa;
+    font-weight: 600;
+    color: #2c3e50;
+}
+
+.pesquisas-table tbody tr:hover {
+    background-color: #f8f9fa;
+}
+
+.percentage {
+    font-weight: bold;
+    color: #667eea;
+    font-size: 1.1rem;
+}
+
+.position {
+    font-weight: 600;
+}
+
+/* Feed de Notícias */
+.news-feed {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.news-item {
+    border: 1px solid #e9ecef;
+    border-radius: 8px;
+    padding: 1.5rem;
+    transition: all 0.3s ease;
+}
+
+.news-item:hover {
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    transform: translateY(-2px);
+}
+
+.news-date {
+    color: #6c757d;
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+}
+
+.news-item h3 {
+    color: #2c3e50;
+    font-size: 1.2rem;
+    margin-bottom: 0.75rem;
+    line-height: 1.4;
+}
+
+.news-item p {
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+}
+
+.news-source {
+    font-size: 0.9rem;
+    color: #6c757d;
+    margin-bottom: 0.5rem;
+}
+
+.news-sentiment {
+    display: inline-block;
+    padding: 0.25rem 0.75rem;
+    border-radius: 15px;
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+
+/* Sentimentos */
+.sentiment-positivo {
+    color: #28a745 !important;
+}
+
+.sentiment-neutro {
+    color: #6c757d !important;
+}
+
+.sentiment-negativo {
+    color: #dc3545 !important;
+}
+
+.news-sentiment.sentiment-positivo {
+    background-color: #d4edda;
+    color: #155724 !important;
+}
+
+.news-sentiment.sentiment-neutro {
+    background-color: #e2e3e5;
+    color: #383d41 !important;
+}
+
+.news-sentiment.sentiment-negativo {
+    background-color: #f8d7da;
+    color: #721c24 !important;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .candidate-profile {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .candidate-avatar-large {
+        width: 100px;
+        height: 100px;
+        font-size: 2.5rem;
+    }
+    
+    .candidate-details h1 {
+        font-size: 2rem;
+    }
+    
+    .quick-metrics {
+        justify-content: center;
+    }
+    
+    .risk-dashboard {
+        grid-template-columns: 1fr;
+    }
+    
+    .chart-legend {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+
+/* Estilos para novos componentes dos candidatos */
+
+/* Loading spinner */
+.loading-spinner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 150px;
+    color: #6c757d;
+}
+
+.loading-spinner i {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+/* Resumo semanal */
+.weekly-summary-card {
+    display: flex;
+    align-items: center;
+    background: white;
+    border-radius: 12px;
+    padding: 1.5rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-left: 4px solid #667eea;
+}
+
+.summary-icon {
+    font-size: 2.5rem;
+    margin-right: 1.5rem;
+    color: #667eea;
+}
+
+.summary-icon.success {
+    color: #059669;
+}
+
+.summary-icon.danger {
+    color: #dc2626;
+}
+
+.summary-icon.warning {
+    color: #d97706;
+}
+
+.summary-content h4 {
+    margin: 0 0 0.5rem 0;
+    color: #2c3e50;
+    font-size: 1.2rem;
+}
+
+.summary-content p {
+    margin: 0.25rem 0;
+    color: #6c757d;
+}
+
+/* Feed de notícias */
+.news-feed-container {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.news-item {
+    padding: 1.5rem;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.news-item:last-child {
+    border-bottom: none;
+}
+
+.news-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.75rem;
+}
+
+.news-source {
+    background: #667eea;
+    color: white;
+    padding: 0.25rem 0.75rem;
+    border-radius: 20px;
+    font-size: 0.75rem;
+    font-weight: 500;
+}
+
+.news-date {
+    color: #6c757d;
+    font-size: 0.875rem;
+}
+
+.news-title {
+    margin: 0 0 0.5rem 0;
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.news-title a {
+    color: #2c3e50;
+    text-decoration: none;
+}
+
+.news-title a:hover {
+    color: #667eea;
+    text-decoration: underline;
+}
+
+.news-summary {
+    color: #6c757d;
+    line-height: 1.5;
+    margin: 0;
+}
+
+.text-success {
+    color: #059669 !important;
+}
+
+.text-danger {
+    color: #dc2626 !important;
+}
+
+.text-warning {
+    color: #d97706 !important;
+}
+
+/* Responsividade para novos componentes */
+@media (max-width: 768px) {
+    .weekly-summary-card {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .summary-icon {
+        margin-right: 0;
+        margin-bottom: 1rem;
+    }
+    
+    .news-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.5rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .news-item {
+        padding: 1rem;
+    }
+    
+    .news-title {
+        font-size: 1rem;
+    }
+}
+

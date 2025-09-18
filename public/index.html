@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eleições DF 2026 - Dashboard</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/fallbacks.css">
+    <link rel="stylesheet" href="assets/css/central-alertas.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <h1><i class="fas fa-vote-yea"></i> Eleições DF 2026</h1>
+            <nav class="nav">
+                <a href="index.html" class="nav-link active">Dashboard</a>
+                <a href="candidatos.html" class="nav-link">Candidatos</a>
+                <a href="pesquisas.html" class="nav-link">Pesquisas</a>
+                <a href="relatorios.html" class="nav-link">Relatórios</a>
+                <a href="configuracao.html" class="nav-link">Configuração</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <div class="container">
+            <!-- Container de Erro -->
+            <div id="error-container" style="display: none;"></div>
+
+            <!-- KPIs Rápidos -->
+            <section id="kpis-container" class="dashboard-section">
+                <div class="loading-placeholder">
+                    <i class="fas fa-spinner fa-spin"></i>
+                    <p>Carregando KPIs...</p>
+                </div>
+            </section>
+
+            <!-- Central de Alertas -->
+            <section class="dashboard-section">
+                <div id="alertas-container">
+                    <div class="loading-placeholder">
+                        <i class="fas fa-spinner fa-spin"></i>
+                        <p>Carregando alertas...</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Grid de Candidatos -->
+            <section class="dashboard-section">
+                <div class="section-header">
+                    <h2><i class="fas fa-users"></i> Candidatos Monitorados</h2>
+                    <div class="section-actions">
+                        <button onclick="window.location.href='candidatos.html'" class="btn-secondary">
+                            Ver Todos
+                        </button>
+                        <button onclick="window.location.href='comparador.html'" class="btn-primary">
+                            Comparar Candidatos
+                        </button>
+                    </div>
+                </div>
+                <div id="candidatos-grid" class="candidatos-grid">
+                    <div class="loading-placeholder">
+                        <i class="fas fa-spinner fa-spin"></i>
+                        <p>Carregando candidatos...</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Gráficos Principais -->
+            <section class="dashboard-section">
+                <div class="section-header">
+                    <h2><i class="fas fa-chart-pie"></i> Análises Visuais</h2>
+                </div>
+                <div class="charts-grid">
+                    <div class="chart-container">
+                        <div class="chart-header">
+                            <h3>Share of Voice por Tema (4 semanas)</h3>
+                        </div>
+                        <div class="chart-body">
+                            <canvas id="sovByThemeChart"></canvas>
+                        </div>
+                    </div>
+                    <div class="chart-container">
+                        <div class="chart-header">
+                            <h3>Distribuição de Retórica (14 dias)</h3>
+                        </div>
+                        <div class="chart-body">
+                            <canvas id="retoricalDistChart"></canvas>
+                        </div>
+                    </div>
+                    <div class="chart-container">
+                        <div class="chart-header">
+                            <h3>Evolução de Pesquisas (30 dias)</h3>
+                        </div>
+                        <div class="chart-body">
+                            <canvas id="pollsEvolutionChart"></canvas>
+                        </div>
+                    </div>
+                    <div class="chart-container">
+                        <div class="chart-header">
+                            <h3>Risco de Imagem (7 dias)</h3>
+                        </div>
+                        <div class="chart-body">
+                            <canvas id="imageRiskChart"></canvas>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Status do Sistema -->
+            <section class="dashboard-section">
+                <div id="atualizacoes-container">
+                    <div class="loading-placeholder">
+                        <i class="fas fa-spinner fa-spin"></i>
+                        <p>Carregando status do sistema...</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Ações Rápidas -->
+            <section class="dashboard-section">
+                <div class="section-header">
+                    <h2><i class="fas fa-bolt"></i> Ações Rápidas</h2>
+                </div>
+                <div class="quick-actions">
+                    <button onclick="window.location.href='relatorios.html?acao=gerar&tipo=semanal'" class="action-btn">
+                        <i class="fas fa-file-pdf"></i>
+                        <span>Gerar Relatório Semanal</span>
+                    </button>
+                    <button onclick="dashboardManager.executarPipeline()" class="action-btn">
+                        <i class="fas fa-sync"></i>
+                        <span>Executar Pipeline</span>
+                    </button>
+                    <button onclick="window.location.href='configuracao.html'" class="action-btn">
+                        <i class="fas fa-cog"></i>
+                        <span>Configurações</span>
+                    </button>
+                    <button onclick="dashboardManager.exportarDados()" class="action-btn">
+                        <i class="fas fa-download"></i>
+                        <span>Exportar Dados</span>
+                    </button>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Sistema de Monitoramento Político DF. Todos os direitos reservados.</p>
+            <div class="footer-links">
+                <a href="#" onclick="dashboardManager.abrirAjuda()">Ajuda</a>
+                <a href="#" onclick="dashboardManager.abrirSobre()">Sobre</a>
+                <a href="#" onclick="dashboardManager.abrirContato()">Contato</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="assets/js/fallbacks.js"></script>
+    <script src="assets/js/dashboard-api.js"></script>
+    <script src="assets/js/dashboard-charts.js"></script>
+    <script>
+        // Inicializar todos os componentes após carregamento da página
+        document.addEventListener('DOMContentLoaded', function() {
+            console.log('Dashboard carregado com sucesso');
+        });
+    </script>
+</body>
+</html>
+

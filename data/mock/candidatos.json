@@ -1,0 +1,412 @@
+{
+  "candidatos": [
+    {
+      "id": 1,
+      "nome": "Celina Leão",
+      "nome_completo": "Celina Leão Lopes",
+      "partido": "PP",
+      "numero": 11,
+      "cargo_atual": "Vice-Governadora",
+      "idade": 52,
+      "profissao": "Administradora",
+      "ativo": true,
+      "cor_tema": "#1f77b4",
+      "foto_url": "/assets/images/candidatos/celina-leao.jpg",
+      "biografia": "Vice-governadora do Distrito Federal desde 2019, administradora com experiência em gestão pública.",
+      "palavras_chave": ["Celina Leão", "Celina", "vice-governadora", "PP"],
+      "redes_sociais": {
+        "twitter": "@celinaleaodf",
+        "instagram": "@celinaleaodf",
+        "facebook": "celinaleaodf",
+        "youtube": "celinaleaodf"
+      },
+      "propostas_principais": [
+        "Modernização da gestão pública",
+        "Atração de investimentos",
+        "Geração de empregos",
+        "Melhoria da infraestrutura"
+      ],
+      "historico_cargos": [
+        {
+          "cargo": "Vice-Governadora",
+          "periodo": "2019-2023",
+          "local": "Distrito Federal"
+        },
+        {
+          "cargo": "Secretária de Trabalho",
+          "periodo": "2015-2018",
+          "local": "Distrito Federal"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "nome": "Izalci Lucas",
+      "nome_completo": "Izalci Lucas Ferreira",
+      "partido": "PSDB",
+      "numero": 45,
+      "cargo_atual": "Senador",
+      "idade": 68,
+      "profissao": "Professor",
+      "ativo": true,
+      "cor_tema": "#ff7f0e",
+      "foto_url": "/assets/images/candidatos/izalci-lucas.jpg",
+      "biografia": "Senador pelo Distrito Federal, professor e ex-deputado federal com longa trajetória política.",
+      "palavras_chave": ["Izalci Lucas", "Izalci", "senador", "PSDB"],
+      "redes_sociais": {
+        "twitter": "@izalci",
+        "instagram": "@izalcisenador",
+        "facebook": "izalcisenador",
+        "youtube": "izalcisenador"
+      },
+      "propostas_principais": [
+        "Fortalecimento da segurança pública",
+        "Melhoria da educação",
+        "Desenvolvimento econômico",
+        "Transparência na gestão"
+      ],
+      "historico_cargos": [
+        {
+          "cargo": "Senador",
+          "periodo": "2019-2027",
+          "local": "Distrito Federal"
+        },
+        {
+          "cargo": "Deputado Federal",
+          "periodo": "2011-2019",
+          "local": "Distrito Federal"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "nome": "Leandro Grass",
+      "nome_completo": "Leandro Grass Peixoto",
+      "partido": "PV",
+      "numero": 43,
+      "cargo_atual": "Deputado Distrital",
+      "idade": 45,
+      "profissao": "Ambientalista",
+      "ativo": true,
+      "cor_tema": "#2ca02c",
+      "foto_url": "/assets/images/candidatos/leandro-grass.jpg",
+      "biografia": "Deputado distrital e ambientalista, defensor de políticas sustentáveis para o DF.",
+      "palavras_chave": ["Leandro Grass", "Grass", "deputado distrital", "PV"],
+      "redes_sociais": {
+        "twitter": "@leandrograssdf",
+        "instagram": "@leandrograssdf",
+        "facebook": "leandrograssdf",
+        "youtube": "leandrograssdf"
+      },
+      "propostas_principais": [
+        "Sustentabilidade ambiental",
+        "Mobilidade urbana",
+        "Energias renováveis",
+        "Preservação do Cerrado"
+      ],
+      "historico_cargos": [
+        {
+          "cargo": "Deputado Distrital",
+          "periodo": "2019-2023",
+          "local": "Distrito Federal"
+        },
+        {
+          "cargo": "Secretário de Meio Ambiente",
+          "periodo": "2015-2018",
+          "local": "Distrito Federal"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "nome": "Erika Kokay",
+      "nome_completo": "Erika Kokay Kokai",
+      "partido": "PT",
+      "numero": 13,
+      "cargo_atual": "Deputada Federal",
+      "idade": 58,
+      "profissao": "Socióloga",
+      "ativo": true,
+      "cor_tema": "#d62728",
+      "foto_url": "/assets/images/candidatos/erika-kokay.jpg",
+      "biografia": "Deputada federal e socióloga, defensora de políticas sociais e direitos humanos.",
+      "palavras_chave": ["Erika Kokay", "Kokay", "deputada federal", "PT"],
+      "redes_sociais": {
+        "twitter": "@erikakokay",
+        "instagram": "@erikakokay",
+        "facebook": "erikakokay",
+        "youtube": "erikakokay"
+      },
+      "propostas_principais": [
+        "Fortalecimento do SUS",
+        "Políticas sociais",
+        "Direitos das mulheres",
+        "Combate à desigualdade"
+      ],
+      "historico_cargos": [
+        {
+          "cargo": "Deputada Federal",
+          "periodo": "2011-2023",
+          "local": "Distrito Federal"
+        },
+        {
+          "cargo": "Deputada Distrital",
+          "periodo": "2007-2011",
+          "local": "Distrito Federal"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "nome": "Damares Alves",
+      "nome_completo": "Damares Regina Alves",
+      "partido": "Republicanos",
+      "numero": 10,
+      "cargo_atual": "Senadora",
+      "idade": 60,
+      "profissao": "Pastora",
+      "ativo": true,
+      "cor_tema": "#9467bd",
+      "foto_url": "/assets/images/candidatos/damares-alves.jpg",
+      "biografia": "Senadora e ex-ministra, defensora de valores conservadores e políticas familiares.",
+      "palavras_chave": ["Damares Alves", "Damares", "senadora", "Republicanos"],
+      "redes_sociais": {
+        "twitter": "@damaresalves",
+        "instagram": "@damaresalves",
+        "facebook": "damaresalvesoficial",
+        "youtube": "damaresalves"
+      },
+      "propostas_principais": [
+        "Proteção da família",
+        "Combate às drogas",
+        "Políticas para crianças",
+        "Valores tradicionais"
+      ],
+      "historico_cargos": [
+        {
+          "cargo": "Senadora",
+          "periodo": "2023-2031",
+          "local": "Distrito Federal"
+        },
+        {
+          "cargo": "Ministra da Mulher, Família e Direitos Humanos",
+          "periodo": "2019-2022",
+          "local": "Brasil"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "nome": "Leila Barros",
+      "nome_completo": "Leila do Vôlei Barros",
+      "partido": "PDT",
+      "numero": 12,
+      "cargo_atual": "Senadora",
+      "idade": 50,
+      "profissao": "Ex-atleta",
+      "ativo": true,
+      "cor_tema": "#8c564b",
+      "foto_url": "/assets/images/candidatos/leila-barros.jpg",
+      "biografia": "Senadora e ex-atleta olímpica, defensora do esporte e políticas de juventude.",
+      "palavras_chave": ["Leila Barros", "Leila", "senadora", "PDT"],
+      "redes_sociais": {
+        "twitter": "@leilabarrosdf",
+        "instagram": "@leilabarrosdf",
+        "facebook": "leilabarrosdf",
+        "youtube": "leilabarrosdf"
+      },
+      "propostas_principais": [
+        "Incentivo ao esporte",
+        "Políticas de juventude",
+        "Educação física escolar",
+        "Inclusão social"
+      ],
+      "historico_cargos": [
+        {
+          "cargo": "Senadora",
+          "periodo": "2019-2027",
+          "local": "Distrito Federal"
+        },
+        {
+          "cargo": "Secretária de Esporte",
+          "periodo": "2015-2018",
+          "local": "Distrito Federal"
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "nome": "José Roberto Arruda",
+      "nome_completo": "José Roberto Arruda",
+      "partido": "PL",
+      "numero": 22,
+      "cargo_atual": "Ex-Governador",
+      "idade": 70,
+      "profissao": "Político",
+      "ativo": true,
+      "cor_tema": "#e377c2",
+      "foto_url": "/assets/images/candidatos/jose-roberto-arruda.jpg",
+      "biografia": "Ex-governador do Distrito Federal com longa trajetória política.",
+      "palavras_chave": ["José Roberto Arruda", "Arruda", "ex-governador", "PL"],
+      "redes_sociais": {
+        "twitter": "@jrarruda",
+        "instagram": "@joseroberto.arruda",
+        "facebook": "joseroberto.arruda",
+        "youtube": "joseroberto.arruda"
+      },
+      "propostas_principais": [
+        "Experiência administrativa",
+        "Desenvolvimento urbano",
+        "Geração de empregos",
+        "Infraestrutura"
+      ],
+      "historico_cargos": [
+        {
+          "cargo": "Governador",
+          "periodo": "2007-2010",
+          "local": "Distrito Federal"
+        },
+        {
+          "cargo": "Senador",
+          "periodo": "1999-2007",
+          "local": "Distrito Federal"
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "nome": "Paula Belmonte",
+      "nome_completo": "Paula Belmonte Coutinho",
+      "partido": "Cidadania",
+      "numero": 23,
+      "cargo_atual": "Deputada Federal",
+      "idade": 42,
+      "profissao": "Advogada",
+      "ativo": true,
+      "cor_tema": "#7f7f7f",
+      "foto_url": "/assets/images/candidatos/paula-belmonte.jpg",
+      "biografia": "Deputada federal e advogada, defensora de políticas de inovação e empreendedorismo.",
+      "palavras_chave": ["Paula Belmonte", "Belmonte", "deputada federal", "Cidadania"],
+      "redes_sociais": {
+        "twitter": "@paulabelmonte",
+        "instagram": "@paulabelmonte",
+        "facebook": "paulabelmonte",
+        "youtube": "paulabelmonte"
+      },
+      "propostas_principais": [
+        "Inovação tecnológica",
+        "Empreendedorismo",
+        "Modernização do Estado",
+        "Economia digital"
+      ],
+      "historico_cargos": [
+        {
+          "cargo": "Deputada Federal",
+          "periodo": "2019-2023",
+          "local": "Distrito Federal"
+        },
+        {
+          "cargo": "Deputada Distrital",
+          "periodo": "2015-2019",
+          "local": "Distrito Federal"
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "nome": "Alberto Fraga",
+      "nome_completo": "Alberto Fraga da Silva",
+      "partido": "PL",
+      "numero": 22,
+      "cargo_atual": "Deputado Federal",
+      "idade": 65,
+      "profissao": "Policial Civil",
+      "ativo": true,
+      "cor_tema": "#bcbd22",
+      "foto_url": "/assets/images/candidatos/alberto-fraga.jpg",
+      "biografia": "Deputado federal e ex-policial civil, especialista em segurança pública.",
+      "palavras_chave": ["Alberto Fraga", "Fraga", "deputado federal", "PL"],
+      "redes_sociais": {
+        "twitter": "@albertofragadf",
+        "instagram": "@albertofragadf",
+        "facebook": "albertofragadf",
+        "youtube": "albertofragadf"
+      },
+      "propostas_principais": [
+        "Segurança pública",
+        "Combate ao crime",
+        "Valorização policial",
+        "Lei e ordem"
+      ],
+      "historico_cargos": [
+        {
+          "cargo": "Deputado Federal",
+          "periodo": "2011-2023",
+          "local": "Distrito Federal"
+        },
+        {
+          "cargo": "Delegado de Polícia",
+          "periodo": "1985-2010",
+          "local": "Distrito Federal"
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "nome": "Fábio Félix",
+      "nome_completo": "Fábio Félix dos Santos",
+      "partido": "PSOL",
+      "numero": 50,
+      "cargo_atual": "Deputado Distrital",
+      "idade": 38,
+      "profissao": "Ativista",
+      "ativo": true,
+      "cor_tema": "#17becf",
+      "foto_url": "/assets/images/candidatos/fabio-felix.jpg",
+      "biografia": "Deputado distrital e ativista LGBTQIA+, defensor de direitos humanos e diversidade.",
+      "palavras_chave": ["Fábio Félix", "Félix", "deputado distrital", "PSOL"],
+      "redes_sociais": {
+        "twitter": "@fabiofelixdf",
+        "instagram": "@fabiofelixdf",
+        "facebook": "fabiofelixdf",
+        "youtube": "fabiofelixdf"
+      },
+      "propostas_principais": [
+        "Direitos LGBTQIA+",
+        "Combate à discriminação",
+        "Políticas de diversidade",
+        "Direitos humanos"
+      ],
+      "historico_cargos": [
+        {
+          "cargo": "Deputado Distrital",
+          "periodo": "2019-2023",
+          "local": "Distrito Federal"
+        },
+        {
+          "cargo": "Ativista Social",
+          "periodo": "2010-2019",
+          "local": "Distrito Federal"
+        }
+      ]
+    }
+  ],
+  "estatisticas": {
+    "total_candidatos": 10,
+    "candidatos_ativos": 10,
+    "partidos_representados": 9,
+    "idade_media": 53.8,
+    "distribuicao_genero": {
+      "masculino": 7,
+      "feminino": 3
+    },
+    "distribuicao_cargos": {
+      "senador": 3,
+      "deputado_federal": 4,
+      "deputado_distrital": 2,
+      "vice_governador": 1
+    }
+  },
+  "ultima_atualizacao": "2025-09-17T10:00:00Z"
+}
+

@@ -1,0 +1,364 @@
+/* Estilos específicos para página de pesquisas */
+
+.page-header {
+    text-align: center;
+    margin-bottom: 2rem;
+    padding: 2rem 0;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.page-header h1 {
+    color: #2c3e50;
+    margin-bottom: 0.5rem;
+}
+
+.page-header p {
+    color: #7f8c8d;
+    font-size: 1.1rem;
+}
+
+/* Filtros */
+.filtros-section {
+    margin-bottom: 2rem;
+}
+
+.filtros-container {
+    display: flex;
+    gap: 1rem;
+    align-items: end;
+    flex-wrap: wrap;
+    padding: 1.5rem;
+    background: #f8f9fa;
+    border-radius: 8px;
+    border: 1px solid #e9ecef;
+}
+
+.filtro-grupo {
+    display: flex;
+    flex-direction: column;
+    min-width: 150px;
+}
+
+.filtro-grupo label {
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    color: #495057;
+}
+
+.filtro-grupo select {
+    padding: 0.5rem;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    background: white;
+    font-size: 0.9rem;
+}
+
+.filtro-grupo select:focus {
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.25);
+}
+
+/* Tabela */
+.tabela-section {
+    margin-bottom: 3rem;
+}
+
+.section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.section-header h2 {
+    color: #2c3e50;
+    margin: 0;
+}
+
+.table-actions {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.table-info {
+    background: #f8f9fa;
+    padding: 1rem;
+    border-radius: 6px;
+    margin-bottom: 1rem;
+    border-left: 4px solid #007bff;
+}
+
+.table-info ul {
+    margin: 0.5rem 0;
+    padding-left: 1.5rem;
+}
+
+.table-info li {
+    margin-bottom: 0.25rem;
+    font-size: 0.9rem;
+}
+
+.table-container {
+    overflow-x: auto;
+    border: 1px solid #dee2e6;
+    border-radius: 6px;
+    background: white;
+}
+
+.data-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.9rem;
+}
+
+.data-table th {
+    background: #f8f9fa;
+    padding: 0.75rem 0.5rem;
+    text-align: left;
+    font-weight: 600;
+    color: #495057;
+    border-bottom: 2px solid #dee2e6;
+    white-space: nowrap;
+}
+
+.data-table td {
+    padding: 0.75rem 0.5rem;
+    border-bottom: 1px solid #dee2e6;
+    vertical-align: top;
+}
+
+.data-table tbody tr:hover {
+    background: #f8f9fa;
+}
+
+.data-table .resultado-cell {
+    max-width: 200px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.resultado-preview {
+    font-size: 0.8rem;
+    color: #6c757d;
+}
+
+.confiabilidade-badge {
+    padding: 0.25rem 0.5rem;
+    border-radius: 12px;
+    font-size: 0.75rem;
+    font-weight: 600;
+}
+
+.confiabilidade-alta {
+    background: #d4edda;
+    color: #155724;
+}
+
+.confiabilidade-baixa {
+    background: #f8d7da;
+    color: #721c24;
+}
+
+.btn-action {
+    padding: 0.25rem 0.5rem;
+    font-size: 0.75rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-right: 0.25rem;
+}
+
+.btn-view {
+    background: #007bff;
+    color: white;
+}
+
+.btn-edit {
+    background: #28a745;
+    color: white;
+}
+
+.btn-delete {
+    background: #dc3545;
+    color: white;
+}
+
+/* Paginação */
+.table-pagination {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background: #f8f9fa;
+    border-top: 1px solid #dee2e6;
+}
+
+.pagination-info {
+    color: #6c757d;
+    font-size: 0.9rem;
+}
+
+.pagination-controls {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.btn-pagination {
+    padding: 0.5rem 1rem;
+    border: 1px solid #dee2e6;
+    background: white;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.9rem;
+}
+
+.btn-pagination:hover:not(:disabled) {
+    background: #e9ecef;
+}
+
+.btn-pagination:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.pagination-page {
+    padding: 0.5rem 0.75rem;
+    border: 1px solid #dee2e6;
+    background: white;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    margin: 0 0.125rem;
+}
+
+.pagination-page.active {
+    background: #007bff;
+    color: white;
+    border-color: #007bff;
+}
+
+/* Gráfico */
+.grafico-section {
+    margin-bottom: 3rem;
+}
+
+.chart-container {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    border: 1px solid #dee2e6;
+    height: 400px;
+}
+
+/* Estatísticas */
+.stats-section {
+    margin-bottom: 2rem;
+}
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+}
+
+.stat-card {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    border: 1px solid #dee2e6;
+    text-align: center;
+}
+
+.stat-card h3 {
+    margin: 0 0 0.5rem 0;
+    color: #6c757d;
+    font-size: 0.9rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.stat-number {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #007bff;
+    display: block;
+}
+
+.stat-date {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #28a745;
+    display: block;
+}
+
+.stat-percent {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #ffc107;
+    display: block;
+}
+
+/* Botões */
+.btn-primary {
+    background: #007bff;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.btn-primary:hover {
+    background: #0056b3;
+}
+
+.btn-secondary {
+    background: #6c757d;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.btn-secondary:hover {
+    background: #545b62;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .filtros-container {
+        flex-direction: column;
+        align-items: stretch;
+    }
+    
+    .filtro-grupo {
+        min-width: auto;
+    }
+    
+    .section-header {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 1rem;
+    }
+    
+    .table-actions {
+        justify-content: center;
+    }
+    
+    .table-pagination {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    
+    .stats-grid {
+        grid-template-columns: 1fr;
+    }
+}
+

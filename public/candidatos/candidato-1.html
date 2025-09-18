@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Celina Leão - Eleições DF 2026</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/candidato.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <h1><i class="fas fa-vote-yea"></i> Eleições DF 2026</h1>
+            <nav class="nav">
+                <a href="../index.html" class="nav-link">Dashboard</a>
+                <a href="../candidatos.html" class="nav-link">Candidatos</a>
+                <a href="../pesquisas.html" class="nav-link">Pesquisas</a>
+                <a href="../relatorios.html" class="nav-link">Relatórios</a>
+                <a href="../configuracao.html" class="nav-link">Configuração</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main">
+        <div class="container">
+            <!-- Header do Candidato -->
+            <section class="candidate-header-section">
+                <div class="candidate-profile">
+                    <div class="candidate-avatar-large">CL</div>
+                    <div class="candidate-details">
+                        <h1>Celina Leão</h1>
+                        <p class="current-role">Vice-Governadora - PP</p>
+                        <p class="target-role">Cargo Alvo: <strong>Governadora</strong></p>
+                        <div class="quick-metrics">
+                            <span class="metric-item">
+                                <i class="fas fa-newspaper"></i>
+                                18 menções esta semana
+                            </span>
+                            <span class="metric-item sentiment-positivo">
+                                <i class="fas fa-smile"></i>
+                                Sentimento Positivo
+                            </span>
+                            <span class="metric-item">
+                                <i class="fas fa-chart-line"></i>
+                                25% nas pesquisas
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- A) Resumo Semanal (texto dinâmico) -->
+            <section class="content-section">
+                <h2><i class="fas fa-calendar-week"></i> Resumo Semanal</h2>
+                <div id="weekly-summary">
+                    <div class="loading-spinner">
+                        <i class="fas fa-spinner fa-spin"></i>
+                        <p>Carregando resumo semanal...</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- B) SoV do candidato por tema (4 semanas) -->
+            <section class="content-section">
+                <h2><i class="fas fa-chart-area"></i> Participação por tema (SoV) — últimas 4 semanas</h2>
+                <div class="chart-container">
+                    <canvas id="candidateSovChart"></canvas>
+                </div>
+            </section>
+
+            <!-- C) Retórica do candidato (14d) -->
+            <section class="content-section">
+                <h2><i class="fas fa-comments"></i> Retórica — 14 dias</h2>
+                <div class="chart-container">
+                    <canvas id="candidateRhetoricChart"></canvas>
+                </div>
+            </section>
+
+            <!-- D) Feed de notícias (lista) -->
+            <section class="content-section">
+                <h2><i class="fas fa-newspaper"></i> Últimas notícias</h2>
+                <div id="news-feed">
+                    <div class="loading-spinner">
+                        <i class="fas fa-spinner fa-spin"></i>
+                        <p>Carregando notícias...</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- E) Pesquisas do candidato (30d) -->
+            <section class="content-section">
+                <h2><i class="fas fa-poll"></i> Pesquisas recentes (30d)</h2>
+                <div id="candidate-polls-table">
+                    <div class="loading-spinner">
+                        <i class="fas fa-spinner fa-spin"></i>
+                        <p>Carregando pesquisas...</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Retórica -->
+            <section class="content-section">
+                <h2><i class="fas fa-comments"></i> Retórica</h2>
+                <div class="chart-container">
+                    <canvas id="retoricaChart" width="400" height="200"></canvas>
+                </div>
+                <div class="rhetoric-analysis">
+                    <h3>Análise do Discurso</h3>
+                    <p>Celina Leão mantém um discurso técnico e propositivo, com foco em soluções práticas para os problemas do DF. Suas falas demonstram experiência administrativa e conhecimento da máquina pública.</p>
+                    
+                    <div class="key-phrases">
+                        <h4>Frases-chave da semana:</h4>
+                        <blockquote>"Precisamos de uma gestão eficiente que dialogue com todos os setores da sociedade"</blockquote>
+                        <blockquote>"O DF tem potencial para ser referência em desenvolvimento sustentável"</blockquote>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Risco de Imagem -->
+            <section class="content-section">
+                <h2><i class="fas fa-shield-alt"></i> Risco de Imagem</h2>
+                <div class="risk-dashboard">
+                    <div class="risk-level risk-baixo">
+                        <h3>Nível de Risco: BAIXO</h3>
+                        <div class="risk-score">2.1/10</div>
+                    </div>
+                    <div class="risk-factors">
+                        <h4>Fatores de Risco:</h4>
+                        <ul>
+                            <li class="risk-low">Menções negativas: 3 (baixo)</li>
+                            <li class="risk-low">Controvérsias: 0 (nenhuma)</li>
+                            <li class="risk-medium">Críticas à gestão: 2 (moderado)</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="chart-container">
+                    <canvas id="riscoChart" width="400" height="200"></canvas>
+                </div>
+            </section>
+
+            <!-- Últimas Pesquisas -->
+            <section class="content-section">
+                <h2><i class="fas fa-poll"></i> Últimas Pesquisas</h2>
+                <div class="table-container">
+                    <table class="pesquisas-table">
+                        <thead>
+                            <tr>
+                                <th>Data</th>
+                                <th>Instituto</th>
+                                <th>Cargo</th>
+                                <th>Percentual</th>
+                                <th>Margem de Erro</th>
+                                <th>Posição</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>10/09/2025</td>
+                                <td>Datafolha</td>
+                                <td>Governadora</td>
+                                <td class="percentage">25%</td>
+                                <td>±3pp</td>
+                                <td class="position">2º lugar</td>
+                            </tr>
+                            <tr>
+                                <td>05/09/2025</td>
+                                <td>Ipec</td>
+                                <td>Governadora</td>
+                                <td class="percentage">23%</td>
+                                <td>±3pp</td>
+                                <td class="position">2º lugar</td>
+                            </tr>
+                            <tr>
+                                <td>28/08/2025</td>
+                                <td>Quaest</td>
+                                <td>Governadora</td>
+                                <td class="percentage">26%</td>
+                                <td>±3pp</td>
+                                <td class="position">2º lugar</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+            <!-- Feed de Notícias -->
+            <section class="content-section">
+                <h2><i class="fas fa-rss"></i> Feed de Notícias</h2>
+                <div class="news-feed">
+                    <article class="news-item">
+                        <div class="news-date">15/09/2025 - 14:30</div>
+                        <h3>Celina Leão apresenta plano de desenvolvimento para o DF</h3>
+                        <p>Vice-governadora detalha propostas para infraestrutura e geração de empregos durante evento no Palácio do Buriti.</p>
+                        <div class="news-source">Fonte: <strong>Correio Braziliense</strong></div>
+                        <div class="news-sentiment sentiment-positivo">Sentimento: Positivo</div>
+                    </article>
+
+                    <article class="news-item">
+                        <div class="news-date">14/09/2025 - 16:45</div>
+                        <h3>Políticas para mulheres são destaque em entrevista</h3>
+                        <p>Em entrevista exclusiva, Celina Leão fala sobre a importância de políticas públicas voltadas para o empoderamento feminino.</p>
+                        <div class="news-source">Fonte: <strong>Metrópoles</strong></div>
+                        <div class="news-sentiment sentiment-positivo">Sentimento: Positivo</div>
+                    </article>
+
+                    <article class="news-item">
+                        <div class="news-date">13/09/2025 - 10:20</div>
+                        <h3>Vice-governadora participa de evento sobre sustentabilidade</h3>
+                        <p>Celina Leão defende políticas ambientais e desenvolvimento sustentável como prioridades para o próximo governo.</p>
+                        <div class="news-source">Fonte: <strong>G1 DF</strong></div>
+                        <div class="news-sentiment sentiment-positivo">Sentimento: Positivo</div>
+                    </article>
+
+                    <article class="news-item">
+                        <div class="news-date">12/09/2025 - 08:15</div>
+                        <h3>Críticas à gestão atual geram debate</h3>
+                        <p>Oposição questiona algumas decisões da atual gestão, incluindo participação da vice-governadora em projetos controversos.</p>
+                        <div class="news-source">Fonte: <strong>R7 DF</strong></div>
+                        <div class="news-sentiment sentiment-neutro">Sentimento: Neutro</div>
+                    </article>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Sistema de Monitoramento Político DF</p>
+            <p>Última atualização: <span id="last-update">15/09/2025</span></p>
+        </div>
+    </footer>
+
+    <script src="../assets/js/candidato.js"></script>
+    <script src="../assets/js/candidato-charts.js"></script>
+    <script>
+        // Inicializar página específica da Celina Leão
+        document.addEventListener('DOMContentLoaded', () => {
+            initCandidatePage({
+                id: 1,
+                nome: 'Celina Leão',
+                partido: 'PP',
+                cargo_alvo: 'Governadora'
+            });
+            
+            // Inicializar gráficos do candidato
+            initializeCandidateCharts('Celina Leão');
+        });
+    </script>
+</body>
+</html>
+

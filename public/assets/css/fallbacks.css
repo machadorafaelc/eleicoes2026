@@ -1,0 +1,312 @@
+/* Estilos para Sistema de Fallbacks e Mensagens Honestas */
+
+/* Mensagens de Fallback */
+.fallback-message {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    margin: 15px 0;
+    border-radius: 8px;
+    border-left: 4px solid;
+    background: #f8f9fa;
+    min-height: 120px;
+}
+
+.fallback-message.info {
+    border-left-color: #17a2b8;
+    background: #d1ecf1;
+}
+
+.fallback-message.warning {
+    border-left-color: #ffc107;
+    background: #fff3cd;
+}
+
+.fallback-message.error {
+    border-left-color: #dc3545;
+    background: #f8d7da;
+}
+
+.fallback-icon {
+    font-size: 2.5rem;
+    margin-right: 20px;
+    opacity: 0.7;
+}
+
+.fallback-message.info .fallback-icon {
+    color: #17a2b8;
+}
+
+.fallback-message.warning .fallback-icon {
+    color: #856404;
+}
+
+.fallback-message.error .fallback-icon {
+    color: #721c24;
+}
+
+.fallback-content h4 {
+    margin: 0 0 10px 0;
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.fallback-content p {
+    margin: 0 0 10px 0;
+    line-height: 1.5;
+    color: #495057;
+}
+
+.fallback-suggestion {
+    display: block;
+    font-style: italic;
+    color: #6c757d;
+    margin-top: 8px;
+}
+
+/* Badges de Confiabilidade */
+.reliability-badge {
+    display: inline-flex;
+    align-items: center;
+    padding: 4px 8px;
+    border-radius: 12px;
+    font-size: 0.75rem;
+    font-weight: 500;
+    margin-left: 8px;
+    cursor: help;
+}
+
+.reliability-badge.warning {
+    background: #fff3cd;
+    color: #856404;
+    border: 1px solid #ffeaa7;
+}
+
+.reliability-badge i {
+    margin-right: 4px;
+    font-size: 0.7rem;
+}
+
+/* Toast de Avisos */
+.warning-toast {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 9999;
+    max-width: 400px;
+    background: #fff;
+    border: 1px solid #ffc107;
+    border-left: 4px solid #ffc107;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    animation: slideInRight 0.3s ease-out;
+}
+
+.toast-content {
+    display: flex;
+    align-items: center;
+    padding: 12px 16px;
+}
+
+.toast-content i {
+    color: #856404;
+    margin-right: 10px;
+    font-size: 1.1rem;
+}
+
+.toast-content span {
+    flex: 1;
+    font-size: 0.9rem;
+    line-height: 1.4;
+    color: #495057;
+}
+
+.toast-close {
+    background: none;
+    border: none;
+    font-size: 1.2rem;
+    color: #6c757d;
+    cursor: pointer;
+    padding: 0;
+    margin-left: 10px;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.toast-close:hover {
+    color: #495057;
+}
+
+@keyframes slideInRight {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+/* Mensagem de Carregamento */
+.loading-message {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 20px;
+    text-align: center;
+    min-height: 120px;
+}
+
+.loading-spinner {
+    font-size: 2rem;
+    color: #6c5ce7;
+    margin-bottom: 15px;
+}
+
+.loading-message p {
+    margin: 0;
+    color: #6c757d;
+    font-size: 0.95rem;
+}
+
+/* Indicadores de Status em Tabelas */
+.status-indicator {
+    display: inline-flex;
+    align-items: center;
+    padding: 2px 6px;
+    border-radius: 10px;
+    font-size: 0.7rem;
+    font-weight: 500;
+}
+
+.status-indicator.low-confidence {
+    background: #fff3cd;
+    color: #856404;
+}
+
+.status-indicator.outdated {
+    background: #e2e3e5;
+    color: #495057;
+}
+
+.status-indicator.reliable {
+    background: #d4edda;
+    color: #155724;
+}
+
+/* Alertas em Cards */
+.card-alert {
+    background: #fff3cd;
+    border: 1px solid #ffeaa7;
+    border-radius: 6px;
+    padding: 8px 12px;
+    margin-bottom: 15px;
+    font-size: 0.85rem;
+    color: #856404;
+}
+
+.card-alert i {
+    margin-right: 6px;
+}
+
+/* Gráficos com Dados Insuficientes */
+.chart-container.insufficient-data {
+    position: relative;
+    min-height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.chart-container.insufficient-data::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: repeating-linear-gradient(
+        45deg,
+        transparent,
+        transparent 10px,
+        rgba(0,0,0,0.03) 10px,
+        rgba(0,0,0,0.03) 20px
+    );
+    border-radius: 8px;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .warning-toast {
+        right: 10px;
+        left: 10px;
+        max-width: none;
+    }
+    
+    .fallback-message {
+        flex-direction: column;
+        text-align: center;
+        padding: 15px;
+    }
+    
+    .fallback-icon {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+}
+
+/* Estados de Hover */
+.reliability-badge:hover {
+    transform: scale(1.05);
+    transition: transform 0.2s ease;
+}
+
+.toast-close:hover {
+    background: rgba(0,0,0,0.1);
+    border-radius: 50%;
+}
+
+/* Animações */
+.fallback-message {
+    animation: fadeInUp 0.4s ease-out;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Estilos para diferentes tipos de dados insuficientes */
+.no-data-placeholder {
+    text-align: center;
+    padding: 30px;
+    color: #6c757d;
+}
+
+.no-data-placeholder i {
+    font-size: 3rem;
+    margin-bottom: 15px;
+    opacity: 0.5;
+}
+
+.no-data-placeholder h5 {
+    margin-bottom: 10px;
+    color: #495057;
+}
+
+.no-data-placeholder p {
+    margin: 0;
+    font-size: 0.9rem;
+}
+

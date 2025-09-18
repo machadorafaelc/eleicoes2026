@@ -1,0 +1,15 @@
+{
+  "name": "eleicoes-df-2026",
+  "version": "1.0.0",
+  "description": "Sistema de Monitoramento Político DF 2026",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vercel dev",
+    "build": "echo 'Build completed'",
+    "start": "vercel dev"
+  },
+  "keywords": ["política", "monitoramento", "eleições", "DF"],
+  "author": "Sistema de Monitoramento Político",
+  "license": "MIT"
+}
+

@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Configuração - Eleições DF 2026</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/configuracao.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <h1><i class="fas fa-vote-yea"></i> Eleições DF 2026</h1>
+            <nav class="nav">
+                <a href="index.html" class="nav-link">Dashboard</a>
+                <a href="candidatos.html" class="nav-link">Candidatos</a>
+                <a href="pesquisas.html" class="nav-link">Pesquisas</a>
+                <a href="relatorios.html" class="nav-link">Relatórios</a>
+                <a href="configuracao.html" class="nav-link active">Configuração</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main">
+        <div class="container">
+            <section class="page-header">
+                <h2><i class="fas fa-cogs"></i> Configuração do Sistema</h2>
+                <p>Configure os parâmetros de monitoramento, fontes de dados e agentes de coleta</p>
+            </section>
+
+            <!-- Config v1 - Agentes de Coleta -->
+            <section class="config-section">
+                <h3><i class="fas fa-robot"></i> Config v1 - Agentes de Coleta</h3>
+                
+                <!-- Candidatos DF -->
+                <div class="config-block">
+                    <h4><i class="fas fa-users"></i> Candidatos Monitorados</h4>
+                    <div class="config-content">
+                        <div class="candidate-list">
+                            <div class="candidate-item">
+                                <span class="candidate-name">Celina Leão</span>
+                                <span class="candidate-status active">Ativo</span>
+                            </div>
+                            <div class="candidate-item">
+                                <span class="candidate-name">Izalci Lucas</span>
+                                <span class="candidate-status active">Ativo</span>
+                            </div>
+                            <div class="candidate-item">
+                                <span class="candidate-name">Leandro Grass</span>
+                                <span class="candidate-status active">Ativo</span>
+                            </div>
+                            <div class="candidate-item">
+                                <span class="candidate-name">Erika Kokay</span>
+                                <span class="candidate-status active">Ativo</span>
+                            </div>
+                            <div class="candidate-item">
+                                <span class="candidate-name">Damares Alves</span>
+                                <span class="candidate-status active">Ativo</span>
+                            </div>
+                            <div class="candidate-item">
+                                <span class="candidate-name">Leila Barros</span>
+                                <span class="candidate-status active">Ativo</span>
+                            </div>
+                            <div class="candidate-item">
+                                <span class="candidate-name">José Roberto Arruda</span>
+                                <span class="candidate-status active">Ativo</span>
+                            </div>
+                            <div class="candidate-item">
+                                <span class="candidate-name">Paula Belmonte</span>
+                                <span class="candidate-status active">Ativo</span>
+                            </div>
+                            <div class="candidate-item">
+                                <span class="candidate-name">Alberto Fraga</span>
+                                <span class="candidate-status active">Ativo</span>
+                            </div>
+                            <div class="candidate-item">
+                                <span class="candidate-name">Fábio Félix</span>
+                                <span class="candidate-status active">Ativo</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Termos Extra -->
+                <div class="config-block">
+                    <h4><i class="fas fa-tags"></i> Termos de Busca Adicionais</h4>
+                    <div class="config-content">
+                        <div class="terms-list">
+                            <span class="term-tag">GDF</span>
+                            <span class="term-tag">Distrito Federal</span>
+                            <span class="term-tag">Brasília</span>
+                        </div>
+                        <p class="config-description">
+                            Termos adicionais utilizados para ampliar a busca por conteúdo relevante sobre política do DF.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Fontes Whitelist -->
+                <div class="config-block">
+                    <h4><i class="fas fa-newspaper"></i> Fontes Autorizadas</h4>
+                    <div class="config-content">
+                        <div class="sources-grid">
+                            <div class="source-item">
+                                <i class="fas fa-check-circle"></i>
+                                <span>G1</span>
+                            </div>
+                            <div class="source-item">
+                                <i class="fas fa-check-circle"></i>
+                                <span>UOL</span>
+                            </div>
+                            <div class="source-item">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Folha de S.Paulo</span>
+                            </div>
+                            <div class="source-item">
+                                <i class="fas fa-check-circle"></i>
+                                <span>O Estado de S. Paulo</span>
+                            </div>
+                            <div class="source-item">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Correio Braziliense</span>
+                            </div>
+                            <div class="source-item">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Metrópoles</span>
+                            </div>
+                            <div class="source-item">
+                                <i class="fas fa-check-circle"></i>
+                                <span>CartaCapital</span>
+                            </div>
+                            <div class="source-item">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Estadão</span>
+                            </div>
+                            <div class="source-item">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Poder360</span>
+                            </div>
+                            <div class="source-item">
+                                <i class="fas fa-check-circle"></i>
+                                <span>CNN Brasil</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tipos de Conteúdo -->
+                <div class="config-block">
+                    <h4><i class="fas fa-file-alt"></i> Tipos de Conteúdo Permitidos</h4>
+                    <div class="config-content">
+                        <div class="content-types">
+                            <div class="content-type-item">
+                                <i class="fas fa-newspaper"></i>
+                                <span>Notícia</span>
+                            </div>
+                            <div class="content-type-item">
+                                <i class="fas fa-file-text"></i>
+                                <span>Artigo</span>
+                            </div>
+                            <div class="content-type-item">
+                                <i class="fas fa-microphone"></i>
+                                <span>Entrevista</span>
+                            </div>
+                            <div class="content-type-item">
+                                <i class="fas fa-video"></i>
+                                <span>Vídeo</span>
+                            </div>
+                            <div class="content-type-item">
+                                <i class="fas fa-share-alt"></i>
+                                <span>Post</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Limites e Parâmetros -->
+                <div class="config-block">
+                    <h4><i class="fas fa-sliders-h"></i> Limites e Parâmetros</h4>
+                    <div class="config-content">
+                        <div class="limits-grid">
+                            <div class="limit-item">
+                                <div class="limit-label">Máximo de itens por execução</div>
+                                <div class="limit-value">80</div>
+                                <div class="limit-description">Quantidade máxima de conteúdos coletados em cada execução do agente</div>
+                            </div>
+                            <div class="limit-item">
+                                <div class="limit-label">Janela de busca (horas)</div>
+                                <div class="limit-value">72</div>
+                                <div class="limit-description">Período retroativo para busca de novos conteúdos</div>
+                            </div>
+                            <div class="limit-item">
+                                <div class="limit-label">Tamanho mínimo do texto</div>
+                                <div class="limit-value">400</div>
+                                <div class="limit-description">Número mínimo de caracteres para considerar o conteúdo válido</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Schemas v1 -->
+            <section class="config-section">
+                <h3><i class="fas fa-database"></i> Schemas v1 - Validação de Dados</h3>
+                
+                <!-- Schema Mídia Item -->
+                <div class="config-block">
+                    <h4><i class="fas fa-newspaper"></i> Schema: midia_item</h4>
+                    <div class="config-content">
+                        <p class="config-description">
+                            Schema para validação de itens de mídia coletados (notícias, artigos, entrevistas, vídeos, posts).
+                        </p>
+                        
+                        <div class="schema-details">
+                            <div class="schema-section">
+                                <h5>Campos Obrigatórios:</h5>
+                                <div class="schema-fields">
+                                    <span class="field-tag required">id</span>
+                                    <span class="field-tag required">candidato</span>
+                                    <span class="field-tag required">fonte</span>
+                                    <span class="field-tag required">url</span>
+                                    <span class="field-tag required">tipo</span>
+                                    <span class="field-tag required">titulo</span>
+                                    <span class="field-tag required">data_publicacao</span>
+                                    <span class="field-tag required">texto</span>
+                                </div>
+                            </div>
+                            
+                            <div class="schema-section">
+                                <h5>Campos Opcionais:</h5>
+                                <div class="schema-fields">
+                                    <span class="field-tag optional">resumo</span>
+                                    <span class="field-tag optional">score_credibilidade</span>
+                                    <span class="field-tag optional">origem_coleta</span>
+                                </div>
+                            </div>
+                            
+                            <div class="schema-validation">
+                                <h5>Regras de Validação:</h5>
+                                <ul>
+                                    <li><strong>texto:</strong> Mínimo 400 caracteres</li>
+                                    <li><strong>titulo:</strong> Entre 10-200 caracteres</li>
+                                    <li><strong>score_credibilidade:</strong> Valor entre 0-1</li>
+                                    <li><strong>data_publicacao:</strong> Formato ISO 8601</li>
+                                    <li><strong>fonte:</strong> Deve estar na whitelist</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Schema Pesquisa Item -->
+                <div class="config-block">
+                    <h4><i class="fas fa-poll"></i> Schema: pesquisa_item</h4>
+                    <div class="config-content">
+                        <p class="config-description">
+                            Schema para validação de pesquisas eleitorais coletadas de institutos de pesquisa.
+                        </p>
+                        
+                        <div class="schema-details">
+                            <div class="schema-section">
+                                <h5>Campos Obrigatórios:</h5>
+                                <div class="schema-fields">
+                                    <span class="field-tag required">id</span>
+                                    <span class="field-tag required">instituto</span>
+                                    <span class="field-tag required">local</span>
+                                    <span class="field-tag required">data_campo</span>
+                                    <span class="field-tag required">amostra</span>
+                                    <span class="field-tag required">margem</span>
+                                    <span class="field-tag required">metodologia</span>
+                                    <span class="field-tag required">cenario</span>
+                                    <span class="field-tag required">resultado</span>
+                                </div>
+                            </div>
+                            
+                            <div class="schema-section">
+                                <h5>Campos Opcionais:</h5>
+                                <div class="schema-fields">
+                                    <span class="field-tag optional">fonte_url</span>
+                                    <span class="field-tag optional">confiabilidade_baixa</span>
+                                </div>
+                            </div>
+                            
+                            <div class="schema-validation">
+                                <h5>Regras de Validação:</h5>
+                                <ul>
+                                    <li><strong>amostra:</strong> Entre 100-10.000 entrevistados</li>
+                                    <li><strong>margem:</strong> Entre 1-10 pontos percentuais</li>
+                                    <li><strong>resultado:</strong> Array com candidato e percentual</li>
+                                    <li><strong>instituto:</strong> Deve estar na lista autorizada</li>
+                                    <li><strong>local:</strong> Distrito Federal, DF ou Brasília</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Institutos Autorizados -->
+                <div class="config-block">
+                    <h4><i class="fas fa-check-circle"></i> Institutos de Pesquisa Autorizados</h4>
+                    <div class="config-content">
+                        <div class="institutes-grid">
+                            <div class="institute-item">
+                                <i class="fas fa-chart-line"></i>
+                                <span>Datafolha</span>
+                            </div>
+                            <div class="institute-item">
+                                <i class="fas fa-chart-line"></i>
+                                <span>Ipec</span>
+                            </div>
+                            <div class="institute-item">
+                                <i class="fas fa-chart-line"></i>
+                                <span>Quaest</span>
+                            </div>
+                            <div class="institute-item">
+                                <i class="fas fa-chart-line"></i>
+                                <span>AtlasIntel</span>
+                            </div>
+                            <div class="institute-item">
+                                <i class="fas fa-chart-line"></i>
+                                <span>Paraná Pesquisas</span>
+                            </div>
+                            <div class="institute-item">
+                                <i class="fas fa-chart-line"></i>
+                                <span>Real Time Big Data</span>
+                            </div>
+                            <div class="institute-item">
+                                <i class="fas fa-chart-line"></i>
+                                <span>PoderData</span>
+                            </div>
+                            <div class="institute-item">
+                                <i class="fas fa-chart-line"></i>
+                                <span>FSB Pesquisa</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Validação em Tempo Real -->
+                <div class="config-block">
+                    <h4><i class="fas fa-shield-alt"></i> Validação em Tempo Real</h4>
+                    <div class="config-content">
+                        <div class="validation-stats">
+                            <div class="validation-item">
+                                <div class="validation-label">Itens validados hoje</div>
+                                <div class="validation-value success">89</div>
+                                <div class="validation-description">Todos os campos obrigatórios preenchidos</div>
+                            </div>
+                            <div class="validation-item">
+                                <div class="validation-label">Itens rejeitados</div>
+                                <div class="validation-value error">3</div>
+                                <div class="validation-description">Falha na validação de schema</div>
+                            </div>
+                            <div class="validation-item">
+                                <div class="validation-label">Taxa de sucesso</div>
+                                <div class="validation-value info">96.7%</div>
+                                <div class="validation-description">Últimas 24 horas</div>
+                            </div>
+                        </div>
+                        
+                        <div class="validation-rules">
+                            <h5>Regras de Qualidade:</h5>
+                            <ul>
+                                <li>Texto mínimo: <strong>400 caracteres</strong></li>
+                                <li>Idade máxima: <strong>30 dias</strong></li>
+                                <li>Cobertura de campos: <strong>80%</strong></li>
+                                <li>Score de credibilidade mínimo: <strong>0.4</strong></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Status dos Agentes -->
+            <section class="config-section">
+                <h3><i class="fas fa-heartbeat"></i> Status dos Agentes</h3>
+                
+                <div class="agents-status">
+                    <div class="agent-card">
+                        <div class="agent-header">
+                            <i class="fas fa-newspaper"></i>
+                            <h4>Agente de Notícias</h4>
+                            <span class="status-badge status-active">Ativo</span>
+                        </div>
+                        <div class="agent-stats">
+                            <div class="stat">
+                                <span class="stat-label">Última execução:</span>
+                                <span class="stat-value">15/09/2025 - 13:00</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-label">Itens coletados:</span>
+                                <span class="stat-value">67</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-label">Próxima execução:</span>
+                                <span class="stat-value">15/09/2025 - 16:00</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="agent-card">
+                        <div class="agent-header">
+                            <i class="fas fa-poll"></i>
+                            <h4>Agente de Pesquisas</h4>
+                            <span class="status-badge status-active">Ativo</span>
+                        </div>
+                        <div class="agent-stats">
+                            <div class="stat">
+                                <span class="stat-label">Última execução:</span>
+                                <span class="stat-value">15/09/2025 - 12:30</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-label">Pesquisas encontradas:</span>
+                                <span class="stat-value">3</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-label">Próxima execução:</span>
+                                <span class="stat-value">15/09/2025 - 18:30</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="agent-card">
+                        <div class="agent-header">
+                            <i class="fas fa-brain"></i>
+                            <h4>Agente de Análise</h4>
+                            <span class="status-badge status-active">Ativo</span>
+                        </div>
+                        <div class="agent-stats">
+                            <div class="stat">
+                                <span class="stat-label">Última execução:</span>
+                                <span class="stat-value">15/09/2025 - 13:15</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-label">Análises processadas:</span>
+                                <span class="stat-value">45</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-label">Próxima execução:</span>
+                                <span class="stat-value">15/09/2025 - 17:15</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Configurações Avançadas -->
+            <section class="config-section">
+                <h3><i class="fas fa-tools"></i> Configurações Avançadas</h3>
+                
+                <div class="advanced-config">
+                    <div class="config-group">
+                        <h4>Análise de Sentimento</h4>
+                        <div class="config-options">
+                            <label class="config-option">
+                                <input type="checkbox" checked>
+                                <span>Análise automática de sentimento</span>
+                            </label>
+                            <label class="config-option">
+                                <input type="checkbox" checked>
+                                <span>Detecção de temas principais</span>
+                            </label>
+                            <label class="config-option">
+                                <input type="checkbox">
+                                <span>Análise de polarização</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="config-group">
+                        <h4>Alertas e Notificações</h4>
+                        <div class="config-options">
+                            <label class="config-option">
+                                <input type="checkbox" checked>
+                                <span>Alertas de risco alto</span>
+                            </label>
+                            <label class="config-option">
+                                <input type="checkbox" checked>
+                                <span>Notificações de novas pesquisas</span>
+                            </label>
+                            <label class="config-option">
+                                <input type="checkbox">
+                                <span>Relatórios semanais automáticos</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="config-group">
+                        <h4>Armazenamento</h4>
+                        <div class="config-options">
+                            <label class="config-option">
+                                <input type="checkbox" checked>
+                                <span>Backup automático diário</span>
+                            </label>
+                            <label class="config-option">
+                                <input type="checkbox">
+                                <span>Compressão de dados antigos</span>
+                            </label>
+                            <label class="config-option">
+                                <input type="checkbox" checked>
+                                <span>Log de atividades detalhado</span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Ações -->
+            <section class="config-actions">
+                <button class="btn-primary" onclick="saveConfiguration()">
+                    <i class="fas fa-save"></i>
+                    Salvar Configurações
+                </button>
+                <button class="btn-secondary" onclick="resetConfiguration()">
+                    <i class="fas fa-undo"></i>
+                    Restaurar Padrões
+                </button>
+                <button class="btn-success" onclick="testAgents()">
+                    <i class="fas fa-play"></i>
+                    Testar Agentes
+                </button>
+            </section>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Sistema de Monitoramento Político DF</p>
+            <p>Última atualização: <span id="last-update">15/09/2025</span></p>
+        </div>
+    </footer>
+
+    <script src="assets/js/configuracao.js"></script>
+</body>
+</html>
+

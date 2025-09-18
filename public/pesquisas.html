@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pesquisas Eleitorais - DF 2026</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/pesquisas.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>Eleições DF 2026</h2>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html">Dashboard</a></li>
+                <li><a href="candidatos.html">Candidatos</a></li>
+                <li><a href="pesquisas.html" class="active">Pesquisas</a></li>
+                <li><a href="relatorios.html">Relatórios</a></li>
+                <li><a href="configuracao.html">Configuração</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="main-content">
+        <div class="container">
+            <header class="page-header">
+                <h1>Pesquisas Eleitorais</h1>
+                <p>Acompanhe os resultados das pesquisas de intenção de voto para as eleições de 2026 no DF</p>
+            </header>
+
+            <!-- Filtros -->
+            <section class="filtros-section">
+                <div class="filtros-container">
+                    <div class="filtro-grupo">
+                        <label for="filtro-instituto">Instituto:</label>
+                        <select id="filtro-instituto">
+                            <option value="">Todos</option>
+                            <option value="Datafolha">Datafolha</option>
+                            <option value="Ipec">Ipec</option>
+                            <option value="Quaest">Quaest</option>
+                            <option value="AtlasIntel">AtlasIntel</option>
+                            <option value="Paraná Pesquisas">Paraná Pesquisas</option>
+                        </select>
+                    </div>
+                    <div class="filtro-grupo">
+                        <label for="filtro-cenario">Cenário:</label>
+                        <select id="filtro-cenario">
+                            <option value="">Todos</option>
+                            <option value="estimulado">Estimulado</option>
+                            <option value="espontaneo">Espontâneo</option>
+                            <option value="rejeicao">Rejeição</option>
+                            <option value="avaliacao">Avaliação</option>
+                        </select>
+                    </div>
+                    <div class="filtro-grupo">
+                        <label for="filtro-periodo">Período:</label>
+                        <select id="filtro-periodo">
+                            <option value="">Todos</option>
+                            <option value="7">Últimos 7 dias</option>
+                            <option value="30">Últimos 30 dias</option>
+                            <option value="90">Últimos 90 dias</option>
+                        </select>
+                    </div>
+                    <button id="btn-aplicar-filtros" class="btn-primary">Aplicar Filtros</button>
+                </div>
+            </section>
+
+            <!-- Tabela pesquisas_df -->
+            <section class="tabela-section">
+                <div class="section-header">
+                    <h2>Tabela: pesquisas_df</h2>
+                    <div class="table-actions">
+                        <button id="btn-exportar" class="btn-secondary">Exportar CSV</button>
+                        <button id="btn-atualizar" class="btn-primary">Atualizar</button>
+                    </div>
+                </div>
+
+                <div class="table-info">
+                    <p><strong>Estrutura da tabela:</strong></p>
+                    <ul>
+                        <li><strong>id:</strong> string (pk) - Identificador único da pesquisa</li>
+                        <li><strong>instituto:</strong> string - Nome do instituto de pesquisa</li>
+                        <li><strong>local:</strong> string - Local da pesquisa (DF)</li>
+                        <li><strong>data_campo:</strong> date - Data de realização da pesquisa</li>
+                        <li><strong>amostra:</strong> integer - Número de entrevistados</li>
+                        <li><strong>margem:</strong> integer - Margem de erro em pontos percentuais</li>
+                        <li><strong>metodologia:</strong> string - Método de coleta (telefônica, presencial, online)</li>
+                        <li><strong>cenario:</strong> string - Tipo de cenário (estimulado, espontâneo, rejeição, avaliação)</li>
+                        <li><strong>resultado_json:</strong> json - Resultados detalhados por candidato</li>
+                        <li><strong>fonte_url:</strong> string - URL da fonte original</li>
+                        <li><strong>confiabilidade_baixa:</strong> boolean - Indicador de qualidade dos dados</li>
+                    </ul>
+                    <p><strong>Índices:</strong> data_campo, instituto</p>
+                </div>
+
+                <div class="table-container">
+                    <table id="tabela-pesquisas" class="data-table">
+                        <thead>
+                            <tr>
+                                <th>ID</th>
+                                <th>Instituto</th>
+                                <th>Data Campo</th>
+                                <th>Amostra</th>
+                                <th>Margem</th>
+                                <th>Metodologia</th>
+                                <th>Cenário</th>
+                                <th>Resultados</th>
+                                <th>Confiabilidade</th>
+                                <th>Ações</th>
+                            </tr>
+                        </thead>
+                        <tbody id="tbody-pesquisas">
+                            <!-- Dados serão carregados via JavaScript -->
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="table-pagination">
+                    <div class="pagination-info">
+                        <span id="pagination-info">Mostrando 0 de 0 registros</span>
+                    </div>
+                    <div class="pagination-controls">
+                        <button id="btn-prev" class="btn-pagination" disabled>Anterior</button>
+                        <span id="pagination-pages"></span>
+                        <button id="btn-next" class="btn-pagination" disabled>Próximo</button>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Gráfico de Evolução -->
+            <section class="grafico-section">
+                <div class="section-header">
+                    <h2>Evolução das Pesquisas</h2>
+                </div>
+                <div class="chart-container">
+                    <canvas id="chart-evolucao"></canvas>
+                </div>
+            </section>
+
+            <!-- Estatísticas -->
+            <section class="stats-section">
+                <div class="section-header">
+                    <h2>Estatísticas</h2>
+                </div>
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <h3>Total de Pesquisas</h3>
+                        <span id="stat-total" class="stat-number">0</span>
+                    </div>
+                    <div class="stat-card">
+                        <h3>Institutos Ativos</h3>
+                        <span id="stat-institutos" class="stat-number">0</span>
+                    </div>
+                    <div class="stat-card">
+                        <h3>Última Pesquisa</h3>
+                        <span id="stat-ultima" class="stat-date">-</span>
+                    </div>
+                    <div class="stat-card">
+                        <h3>Confiabilidade Média</h3>
+                        <span id="stat-confiabilidade" class="stat-percent">0%</span>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <script src="assets/js/pesquisas.js"></script>
+</body>
+</html>
+

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Candidatos - Eleições DF 2026</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <h1><i class="fas fa-vote-yea"></i> Eleições DF 2026</h1>
+            <nav class="nav">
+                <a href="index.html" class="nav-link">Dashboard</a>
+                <a href="candidatos.html" class="nav-link active">Candidatos</a>
+                <a href="pesquisas.html" class="nav-link">Pesquisas</a>
+                <a href="relatorios.html" class="nav-link">Relatórios</a>
+                <a href="configuracao.html" class="nav-link">Configuração</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main">
+        <div class="container">
+            <section class="page-header">
+                <h2><i class="fas fa-users"></i> Candidatos Monitorados</h2>
+                <p>Acompanhe todos os candidatos potenciais para as eleições de 2026 no Distrito Federal</p>
+            </section>
+
+            <section class="candidates-list">
+                <div class="candidates-grid" id="all-candidates-grid">
+                    <!-- Candidatos serão carregados dinamicamente -->
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Sistema de Monitoramento Político DF</p>
+            <p>Última atualização: <span id="last-update">15/09/2025</span></p>
+        </div>
+    </footer>
+
+    <script src="assets/js/candidatos.js"></script>
+</body>
+</html>
+

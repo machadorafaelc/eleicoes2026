@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relatórios - Eleições DF 2026</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/relatorios.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <h1><i class="fas fa-vote-yea"></i> Eleições DF 2026</h1>
+            <nav class="nav">
+                <a href="index.html" class="nav-link">Dashboard</a>
+                <a href="candidatos.html" class="nav-link">Candidatos</a>
+                <a href="pesquisas.html" class="nav-link">Pesquisas</a>
+                <a href="relatorios.html" class="nav-link active">Relatórios</a>
+                <a href="configuracao.html" class="nav-link">Configuração</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main">
+        <div class="container">
+            <section class="page-header">
+                <h2><i class="fas fa-file-pdf"></i> Relatórios Semanais</h2>
+                <p>Acesse os relatórios consolidados em formato PDF</p>
+            </section>
+
+            <section class="reports-section">
+                <div class="reports-grid">
+                    <!-- Exemplo de Relatório -->
+                    <div class="report-card">
+                        <div class="report-icon">
+                            <i class="fas fa-file-pdf"></i>
+                        </div>
+                        <div class="report-info">
+                            <h4>Relatório Semanal - 15/09/2025</h4>
+                            <p>Análise consolidada da semana de 08/09 a 14/09</p>
+                        </div>
+                        <div class="report-actions">
+                            <a href="relatorios/semana-37-2025.pdf" class="btn-download" download>
+                                <i class="fas fa-download"></i>
+                                Baixar
+                            </a>
+                            <button class="btn-view" onclick="viewReport('relatorios/semana-37-2025.pdf')">
+                                <i class="fas fa-eye"></i>
+                                Visualizar
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Mais relatórios serão adicionados aqui dinamicamente -->
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Sistema de Monitoramento Político DF</p>
+        </div>
+    </footer>
+
+    <script src="assets/js/relatorios.js"></script>
+</body>
+</html>
+

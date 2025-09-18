@@ -1,0 +1,581 @@
+/* Estilos para página de configuração */
+
+.page-header {
+    text-align: center;
+    margin-bottom: 3rem;
+    padding: 2rem 0;
+}
+
+.page-header h2 {
+    color: #2c3e50;
+    font-size: 2.2rem;
+    margin-bottom: 1rem;
+}
+
+.page-header p {
+    color: #7f8c8d;
+    font-size: 1.1rem;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Seções de Configuração */
+.config-section {
+    background: white;
+    border-radius: 12px;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.config-section h3 {
+    color: #2c3e50;
+    font-size: 1.6rem;
+    margin-bottom: 2rem;
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    border-bottom: 2px solid #e9ecef;
+    padding-bottom: 1rem;
+}
+
+.config-section h3 i {
+    color: #667eea;
+}
+
+/* Blocos de Configuração */
+.config-block {
+    margin-bottom: 2rem;
+    border: 1px solid #e9ecef;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.config-block h4 {
+    background: #f8f9fa;
+    color: #2c3e50;
+    padding: 1rem 1.5rem;
+    margin: 0;
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    border-bottom: 1px solid #e9ecef;
+}
+
+.config-block h4 i {
+    color: #667eea;
+}
+
+.config-content {
+    padding: 1.5rem;
+}
+
+.config-description {
+    color: #6c757d;
+    font-size: 0.9rem;
+    margin-top: 1rem;
+    font-style: italic;
+}
+
+/* Lista de Candidatos */
+.candidate-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+}
+
+.candidate-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.75rem 1rem;
+    background: #f8f9fa;
+    border-radius: 6px;
+    border-left: 4px solid #667eea;
+}
+
+.candidate-name {
+    font-weight: 500;
+    color: #2c3e50;
+}
+
+.candidate-status {
+    padding: 0.25rem 0.75rem;
+    border-radius: 12px;
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+
+.candidate-status.active {
+    background-color: #d4edda;
+    color: #155724;
+}
+
+/* Termos de Busca */
+.terms-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.term-tag {
+    background: #667eea;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+/* Grid de Fontes */
+.sources-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+}
+
+.source-item {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 0.75rem;
+    background: #f8f9fa;
+    border-radius: 6px;
+    border: 1px solid #e9ecef;
+}
+
+.source-item i {
+    color: #28a745;
+    font-size: 1.1rem;
+}
+
+.source-item span {
+    font-weight: 500;
+    color: #2c3e50;
+}
+
+/* Tipos de Conteúdo */
+.content-types {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.content-type-item {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.75rem 1rem;
+    background: #f8f9fa;
+    border-radius: 6px;
+    border: 1px solid #e9ecef;
+}
+
+.content-type-item i {
+    color: #667eea;
+    font-size: 1.1rem;
+}
+
+.content-type-item span {
+    font-weight: 500;
+    color: #2c3e50;
+}
+
+/* Limites */
+.limits-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+}
+
+.limit-item {
+    padding: 1.5rem;
+    background: #f8f9fa;
+    border-radius: 8px;
+    border-left: 4px solid #667eea;
+}
+
+.limit-label {
+    font-weight: 600;
+    color: #2c3e50;
+    margin-bottom: 0.5rem;
+}
+
+.limit-value {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #667eea;
+    margin-bottom: 0.5rem;
+}
+
+.limit-description {
+    color: #6c757d;
+    font-size: 0.9rem;
+    line-height: 1.4;
+}
+
+/* Status dos Agentes */
+.agents-status {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+}
+
+.agent-card {
+    background: #f8f9fa;
+    border-radius: 8px;
+    padding: 1.5rem;
+    border: 1px solid #e9ecef;
+}
+
+.agent-header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #e9ecef;
+}
+
+.agent-header i {
+    color: #667eea;
+    font-size: 1.5rem;
+}
+
+.agent-header h4 {
+    color: #2c3e50;
+    margin: 0;
+    flex: 1;
+}
+
+.status-badge {
+    padding: 0.25rem 0.75rem;
+    border-radius: 12px;
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+
+.status-active {
+    background-color: #d4edda;
+    color: #155724;
+}
+
+.status-inactive {
+    background-color: #f8d7da;
+    color: #721c24;
+}
+
+.agent-stats {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.stat {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.stat-label {
+    color: #6c757d;
+    font-size: 0.9rem;
+}
+
+.stat-value {
+    color: #2c3e50;
+    font-weight: 500;
+}
+
+/* Configurações Avançadas */
+.advanced-config {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.config-group h4 {
+    color: #2c3e50;
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+}
+
+.config-options {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.config-option {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    cursor: pointer;
+    padding: 0.5rem;
+    border-radius: 4px;
+    transition: background-color 0.2s;
+}
+
+.config-option:hover {
+    background-color: #f8f9fa;
+}
+
+.config-option input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+    accent-color: #667eea;
+}
+
+.config-option span {
+    color: #2c3e50;
+    font-size: 0.95rem;
+}
+
+/* Ações */
+.config-actions {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    margin-top: 2rem;
+    padding: 2rem;
+    background: #f8f9fa;
+    border-radius: 8px;
+}
+
+.btn-primary, .btn-secondary, .btn-success {
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 6px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.btn-primary {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+}
+
+.btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(102, 126, 234, 0.4);
+}
+
+.btn-secondary {
+    background: #6c757d;
+    color: white;
+}
+
+.btn-secondary:hover {
+    background: #5a6268;
+    transform: translateY(-2px);
+}
+
+.btn-success {
+    background: #28a745;
+    color: white;
+}
+
+.btn-success:hover {
+    background: #218838;
+    transform: translateY(-2px);
+}
+
+/* Schemas */
+.schema-details {
+    margin-top: 1.5rem;
+}
+
+.schema-section {
+    margin-bottom: 1.5rem;
+}
+
+.schema-section h5 {
+    color: #2c3e50;
+    margin-bottom: 0.75rem;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.schema-fields {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.field-tag {
+    padding: 0.4rem 0.8rem;
+    border-radius: 15px;
+    font-size: 0.85rem;
+    font-weight: 500;
+    font-family: 'Courier New', monospace;
+}
+
+.field-tag.required {
+    background-color: #dc3545;
+    color: white;
+}
+
+.field-tag.optional {
+    background-color: #6c757d;
+    color: white;
+}
+
+.schema-validation ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.schema-validation li {
+    padding: 0.5rem 0;
+    border-bottom: 1px solid #e9ecef;
+    color: #555;
+}
+
+.schema-validation li:last-child {
+    border-bottom: none;
+}
+
+/* Institutos Grid */
+.institutes-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 1rem;
+}
+
+.institute-item {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 0.75rem;
+    background: #f8f9fa;
+    border-radius: 6px;
+    border: 1px solid #e9ecef;
+}
+
+.institute-item i {
+    color: #667eea;
+    font-size: 1.1rem;
+}
+
+.institute-item span {
+    font-weight: 500;
+    color: #2c3e50;
+}
+
+/* Validação em Tempo Real */
+.validation-stats {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.validation-item {
+    text-align: center;
+    padding: 1.5rem;
+    background: #f8f9fa;
+    border-radius: 8px;
+    border-left: 4px solid #667eea;
+}
+
+.validation-label {
+    font-size: 0.9rem;
+    color: #6c757d;
+    margin-bottom: 0.5rem;
+}
+
+.validation-value {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+.validation-value.success {
+    color: #28a745;
+}
+
+.validation-value.error {
+    color: #dc3545;
+}
+
+.validation-value.info {
+    color: #667eea;
+}
+
+.validation-description {
+    font-size: 0.8rem;
+    color: #6c757d;
+}
+
+.validation-rules {
+    background: #f8f9fa;
+    padding: 1.5rem;
+    border-radius: 8px;
+    border-left: 4px solid #28a745;
+}
+
+.validation-rules h5 {
+    color: #2c3e50;
+    margin-bottom: 1rem;
+}
+
+.validation-rules ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.validation-rules li {
+    padding: 0.5rem 0;
+    color: #555;
+    border-bottom: 1px solid #e9ecef;
+}
+
+.validation-rules li:last-child {
+    border-bottom: none;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .candidate-list {
+        grid-template-columns: 1fr;
+    }
+    
+    .sources-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .limits-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .agents-status {
+        grid-template-columns: 1fr;
+    }
+    
+    .advanced-config {
+        grid-template-columns: 1fr;
+    }
+    
+    .config-actions {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .terms-list {
+        justify-content: center;
+    }
+    
+    .content-types {
+        justify-content: center;
+    }
+}
+
